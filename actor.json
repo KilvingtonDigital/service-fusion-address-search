@@ -1,0 +1,61 @@
+{
+  "actorSpecification": 1,
+  "name": "service-fusion-address-search",
+  "title": "Service Fusion: search customers by address (headless, auto-select best match)",
+  "description": "Logs into Service Fusion, searches customers, auto-selects the best matching row using address/city/zip scoring, opens the detail page, and extracts key info.",
+  "version": "0.3",
+  "buildTag": "latest",
+  "Dockerfile": "./Dockerfile",
+  "input": {
+    "title": "Input",
+    "type": "object",
+    "properties": {
+      "addresses": {
+        "title": "Simple mode: array of address strings",
+        "type": "array",
+        "items": { "type": "string" },
+        "default": []
+      },
+      "queries": {
+        "title": "Rich mode: array of { address, city?, zip? }",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "address": { "type": "string" },
+            "city":    { "type": "string" },
+            "zip":     { "type": "string" }
+          },
+          "required": ["address"]
+        },
+        "default": [
+          { "address": "1462 22nd", "city": "Birmingham", "zip": "35234" }
+        ]
+      },
+      "searchSettleMs": {
+        "title": "Wait after search submit (ms)",
+        "type": "integer",
+        "default": 7000
+      },
+      "headless": { "title": "Run headless", "type": "boolean", "default": true },
+      "slowMo":   { "title": "Slow down actions (ms)", "type": "integer", "default": 0 },
+      "navigationTimeoutSecs": { "title": "Per-step timeout (seconds)", "type": "integer", "default": 45 },
+      "selectors": {
+        "title": "CSS selectors (override only if needed)",
+        "type": "object",
+        "properties": {
+          "loginUrl":     { "type": "string", "default": "https://auth.servicefusion.com/auth/login" },
+          "customersUrl": { "type": "string", "default": "https://admin.servicefusion.com/customer/customerList" },
+          "company":      { "type": "string", "default": "#company" },
+          "username":     { "type": "string", "default": "#uid" },
+          "password":     { "type": "string", "default": "#pwd" },
+          "loginBtn":     { "type": "string", "default": "button[type='submit']" },
+          "searchField":  { "type": "string", "default": "#CustomersListFilterForm_quickSearch" },
+          "resultsRow":   { "type": "string", "default": "table tbody tr" },
+          "resultLink":   { "type": "string", "default": "a[href*='customer/view']" },
+          "loadingText":  { "type": "string", "default": "text=Please wait while loading the details" }
+        }
+      }
+    }
+  }
+}

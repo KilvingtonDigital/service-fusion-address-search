@@ -1,0 +1,55 @@
+{
+	"query": {
+		"address": "1462 22nd",
+		"city": "Birmingham",
+		"zip": "35234"
+	},
+	"chosen": {
+		"score": 120,
+		"breakdown": {
+			"house": 50,
+			"zip": 40,
+			"city": 20,
+			"streetTokens": 10
+		},
+		"name": "Edna Freeman",
+		"serviceLocation": "1462 22nd St N",
+		"city": "Birmingham, Alabama",
+		"zip": "35234-2714",
+		"href": "https://admin.servicefusion.com/customer/customerAdd?id=_n-as2AN1s268lMH-lx-V6ypM8NCBHw5A3IWlEIAnKQ"
+	},
+	"detailOpened": true,
+	"detailUrl": "https://admin.servicefusion.com/customer/customerAdd?id=_n-as2AN1s268lMH-lx-V6ypM8NCBHw5A3IWlEIAnKQ",
+	"customerId": "_n-as2AN1s268lMH-lx-V6ypM8NCBHw5A3IWlEIAnKQ",
+	"details": {
+		"customerName": "Edna Freeman            \n            \n                \n                    \n                         New Estimate or Job  \n                    \n                        \n                             New Estimate\n                             New Job\n                        \n                \n                \n                    Save & Close\n                    Save",
+		"accountNumber": null,
+		"vipAccount": false,
+		"serviceAgreement": {
+			"name": "",
+			"effectiveDate": "08/11/2022",
+			"expirationDate": "03/31/2028",
+			"amount": "boxed",
+			"description": "Edna Freeman"
+		},
+		"primaryContact": {
+			"firstName": "",
+			"lastName": "",
+			"phoneNumber": null,
+			"phoneType": "Mobile",
+			"email": null
+		},
+		"allFormFields": {
+			"Customer Name": "Edna Freeman",
+			"Account Number": "107378",
+			"Agreement Name": "Fortified Renewal",
+			"Effective Date": "08/11/2022",
+			"Expiration Date": "03/31/2028",
+			"$": "0.00",
+			"Description/Notes": "1462 22nd St N",
+			"First Name": "Edna",
+			"Last Name": "Freeman"
+		}
+	},
+	"scrapedAt": "2025-10-02T02:52:29.812Z"
+}

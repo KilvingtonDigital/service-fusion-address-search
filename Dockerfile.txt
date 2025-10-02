@@ -1,0 +1,12 @@
+# Apify base image with Playwright + Chrome
+FROM apify/actor-node-playwright-chrome:latest
+
+# Copy package manifests and install production deps
+COPY package*.json ./
+RUN npm ci --omit=dev
+
+# Copy source
+COPY . ./
+
+# Start the actor
+CMD ["npm", "start"]

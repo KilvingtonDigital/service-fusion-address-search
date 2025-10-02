@@ -1,0 +1,17 @@
+{
+  "name": "service-fusion-address-search",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/main.js",
+    "local": "cross-env APIFY_LOCAL_STORAGE_DIR=./storage node ./src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.1.11",
+    "dotenv": "^17.2.3",
+    "playwright": "^1.47.2"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+﻿{
+  "queries": [
+    {
+      "address": "1462 22nd",
+      "city": "Birmingham",
+      "zip": "35234"
+    }
+  ],
+  "headless": false,
+  "searchSettleMs": 7000
+}

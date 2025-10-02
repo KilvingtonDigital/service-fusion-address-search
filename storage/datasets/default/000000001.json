@@ -1,0 +1,24 @@
+{
+	"query": {
+		"address": "1462 22nd",
+		"city": "Birmingham",
+		"zip": "35234"
+	},
+	"tablePreviewTop3": [
+		{
+			"score": 120,
+			"breakdown": {
+				"house": 50,
+				"zip": 40,
+				"city": 20,
+				"streetTokens": 10
+			},
+			"name": "Edna Freeman",
+			"serviceLocation": "1462 22nd St N",
+			"city": "Birmingham, Alabama",
+			"zip": "35234-2714",
+			"href": "https://admin.servicefusion.com/customer/customerAdd?id=_n-as2AN1s268lMH-lx-V6ypM8NCBHw5A3IWlEIAnKQ"
+		}
+	],
+	"scrapedAt": "2025-10-02T02:51:37.805Z"
+}
